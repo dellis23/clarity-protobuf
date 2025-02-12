@@ -1563,6 +1563,46 @@ public final class DeadlockMessageId {
      * <code>k_EUserMsg_BossKilled = 347;</code>
      */
     k_EUserMsg_BossKilled(41, 347),
+    /**
+     * <code>k_EUserMsg_BossDamaged = 348;</code>
+     */
+    k_EUserMsg_BossDamaged(42, 348),
+    /**
+     * <code>k_EUserMsg_MidBossSpawned = 349;</code>
+     */
+    k_EUserMsg_MidBossSpawned(43, 349),
+    /**
+     * <code>k_EUserMsg_RejuvStatus = 350;</code>
+     */
+    k_EUserMsg_RejuvStatus(44, 350),
+    /**
+     * <code>k_EUserMsg_KillStreak = 351;</code>
+     */
+    k_EUserMsg_KillStreak(45, 351),
+    /**
+     * <code>k_EUserMsg_TeamMsg = 352;</code>
+     */
+    k_EUserMsg_TeamMsg(46, 352),
+    /**
+     * <code>k_EUserMsg_PlayerRespawned = 353;</code>
+     */
+    k_EUserMsg_PlayerRespawned(47, 353),
+    /**
+     * <code>k_EUserMsg_CallCheaterVote = 354;</code>
+     */
+    k_EUserMsg_CallCheaterVote(48, 354),
+    /**
+     * <code>k_EUserMsg_MeleeHit = 355;</code>
+     */
+    k_EUserMsg_MeleeHit(49, 355),
+    /**
+     * <code>k_EUserMsg_FlexSlotUnlocked = 356;</code>
+     */
+    k_EUserMsg_FlexSlotUnlocked(50, 356),
+    /**
+     * <code>k_EUserMsg_SeasonalAchievementUnlocked = 357;</code>
+     */
+    k_EUserMsg_SeasonalAchievementUnlocked(51, 357),
     ;
 
     /**
@@ -1733,6 +1773,46 @@ public final class DeadlockMessageId {
      * <code>k_EUserMsg_BossKilled = 347;</code>
      */
     public static final int k_EUserMsg_BossKilled_VALUE = 347;
+    /**
+     * <code>k_EUserMsg_BossDamaged = 348;</code>
+     */
+    public static final int k_EUserMsg_BossDamaged_VALUE = 348;
+    /**
+     * <code>k_EUserMsg_MidBossSpawned = 349;</code>
+     */
+    public static final int k_EUserMsg_MidBossSpawned_VALUE = 349;
+    /**
+     * <code>k_EUserMsg_RejuvStatus = 350;</code>
+     */
+    public static final int k_EUserMsg_RejuvStatus_VALUE = 350;
+    /**
+     * <code>k_EUserMsg_KillStreak = 351;</code>
+     */
+    public static final int k_EUserMsg_KillStreak_VALUE = 351;
+    /**
+     * <code>k_EUserMsg_TeamMsg = 352;</code>
+     */
+    public static final int k_EUserMsg_TeamMsg_VALUE = 352;
+    /**
+     * <code>k_EUserMsg_PlayerRespawned = 353;</code>
+     */
+    public static final int k_EUserMsg_PlayerRespawned_VALUE = 353;
+    /**
+     * <code>k_EUserMsg_CallCheaterVote = 354;</code>
+     */
+    public static final int k_EUserMsg_CallCheaterVote_VALUE = 354;
+    /**
+     * <code>k_EUserMsg_MeleeHit = 355;</code>
+     */
+    public static final int k_EUserMsg_MeleeHit_VALUE = 355;
+    /**
+     * <code>k_EUserMsg_FlexSlotUnlocked = 356;</code>
+     */
+    public static final int k_EUserMsg_FlexSlotUnlocked_VALUE = 356;
+    /**
+     * <code>k_EUserMsg_SeasonalAchievementUnlocked = 357;</code>
+     */
+    public static final int k_EUserMsg_SeasonalAchievementUnlocked_VALUE = 357;
 
 
     public final int getNumber() { return value; }
@@ -1781,6 +1861,16 @@ public final class DeadlockMessageId {
         case 345: return k_EUserMsg_CurrencyChanged;
         case 346: return k_EUserMsg_GameOver;
         case 347: return k_EUserMsg_BossKilled;
+        case 348: return k_EUserMsg_BossDamaged;
+        case 349: return k_EUserMsg_MidBossSpawned;
+        case 350: return k_EUserMsg_RejuvStatus;
+        case 351: return k_EUserMsg_KillStreak;
+        case 352: return k_EUserMsg_TeamMsg;
+        case 353: return k_EUserMsg_PlayerRespawned;
+        case 354: return k_EUserMsg_CallCheaterVote;
+        case 355: return k_EUserMsg_MeleeHit;
+        case 356: return k_EUserMsg_FlexSlotUnlocked;
+        case 357: return k_EUserMsg_SeasonalAchievementUnlocked;
         default: return null;
       }
     }
@@ -1983,7 +2073,7 @@ public final class DeadlockMessageId {
       "\n\rEM_PlayJingle\020\210\001\022\025\n\020EM_ScreenOverlay\020\211" +
       "\001\022\027\n\022EM_RemoveAllDecals\020\212\001\022\026\n\021EM_Propaga" +
       "teForce\020\213\001\022\017\n\nEM_DoSpark\020\214\001\022\020\n\013EM_FixAng" +
-      "le\020\215\001*\232\013\n\025CitadelUserMessageIds\022\026\n\021k_EUs",
+      "le\020\215\001*\324\r\n\025CitadelUserMessageIds\022\026\n\021k_EUs",
       "erMsg_Damage\020\254\002\022\027\n\022k_EUserMsg_MapPing\020\257\002" +
       "\022\033\n\026k_EUserMsg_TeamRewards\020\260\002\022\035\n\030k_EUser" +
       "Msg_AbilityFailed\020\262\002\022\"\n\035k_EUserMsg_Trigg" +
@@ -2019,10 +2109,18 @@ public final class DeadlockMessageId {
       "ParticipantSetLibraryStackFields\020\330\002\022\037\n\032k" +
       "_EUserMsg_CurrencyChanged\020\331\002\022\030\n\023k_EUserM" +
       "sg_GameOver\020\332\002\022\032\n\025k_EUserMsg_BossKilled\020" +
-      "\333\002*E\n\027CitadelEntityMessageIds\022*\n%k_EEnti" +
-      "tyMsg_BreakablePropSpawnDebris\020\364\003B;\n&ska" +
-      "distats.clarity.wire.deadlock.protoB\021Dea" +
-      "dlockMessageId"
+      "\333\002\022\033\n\026k_EUserMsg_BossDamaged\020\334\002\022\036\n\031k_EUs" +
+      "erMsg_MidBossSpawned\020\335\002\022\033\n\026k_EUserMsg_Re" +
+      "juvStatus\020\336\002\022\032\n\025k_EUserMsg_KillStreak\020\337\002" +
+      "\022\027\n\022k_EUserMsg_TeamMsg\020\340\002\022\037\n\032k_EUserMsg_" +
+      "PlayerRespawned\020\341\002\022\037\n\032k_EUserMsg_CallChe",
+      "aterVote\020\342\002\022\030\n\023k_EUserMsg_MeleeHit\020\343\002\022 \n" +
+      "\033k_EUserMsg_FlexSlotUnlocked\020\344\002\022+\n&k_EUs" +
+      "erMsg_SeasonalAchievementUnlocked\020\345\002*E\n\027" +
+      "CitadelEntityMessageIds\022*\n%k_EEntityMsg_" +
+      "BreakablePropSpawnDebris\020\364\003B;\n&skadistat" +
+      "s.clarity.wire.deadlock.protoB\021DeadlockM" +
+      "essageId"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
